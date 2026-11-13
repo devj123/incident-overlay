@@ -1,0 +1,21 @@
+{
+  "name": "incident-overlay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Traffic incident overlay prototype — flow layer, incident geometry, severity markers, time scrubbing.",
+  "scripts": {
+    "start": "npx --yes serve -l 5173 .",
+    "start:py": "python3 -m http.server 5173",
+    "test": "node --test tests/unit.test.mjs tests/integration.test.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "check": "npm test && npm run smoke",
+    "gen:sample": "node tools/gen-sample.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

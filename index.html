@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Incident Overlay — Prototype</title>
+<meta name="description" content="Traffic incident overlay prototype: flow layer, incident geometry, severity markers, time scrubbing." />
+
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+<!-- Shown only when opened over file:// , where ES modules are blocked by CORS. -->
+<div id="env-warning" hidden>
+  <div class="env-warning__card" role="alertdialog" aria-labelledby="env-warning-title">
+    <h1 id="env-warning-title">Needs a local server</h1>
+    <p>
+      This page uses ES modules, which browsers refuse to load over
+      <code>file://</code>. Serve the folder over HTTP instead:
+    </p>
+    <pre><code>cd incident-overlay
+python3 -m http.server 5173</code></pre>
+    <p>Then open <a href="http://localhost:5173">http://localhost:5173</a>.</p>
+    <p class="env-warning__hint">
+      In VS Code you can also right-click <code>index.html</code> →
+      <em>Open with Live Server</em>.
+    </p>
+  </div>
+</div>
+
+<div id="app" class="app">
+
+  <header class="app__header" id="app-header">
+    <div class="brand">
+      <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 2.6 22.2 20.4H1.8L12 2.6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M12 9.4v4.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="16.9" r="1.15" fill="currentColor"/>
+      </svg>
+      <div class="brand__text">
+        <span class="brand__title">Incident Overlay</span>
+        <span class="brand__subtitle">prototype</span>
+      </div>
+    </div>
+    <div class="app__header-spacer"></div>
+    <div id="status-bar-mount"></div>
+  </header>
+
+  <main class="app__body">
+    <!-- Leaflet mounts here -->
+    <div id="map" role="application" aria-label="Traffic map with incident overlay"></div>
+
+    <!-- Floating left rail: layer toggles, filters, legend -->
+    <div id="control-panel-mount" class="overlay-slot overlay-slot--left"></div>
+
+    <!-- Floating right rail: incident list + selected incident detail -->
+    <div id="detail-panel-mount" class="overlay-slot overlay-slot--right"></div>
+
+    <!-- Bottom: time scrubber -->
+    <div id="timeline-mount" class="overlay-slot overlay-slot--bottom"></div>
+
+    <div id="map-readout" class="map-readout" aria-live="off"></div>
+  </main>
+
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+</div>
+
+<script>
+  // Fail loudly and usefully instead of rendering a blank page.
+  if (location.protocol === 'file:') {
+    document.getElementById('env-warning').hidden = false;
+    document.getElementById('app').style.display = 'none';
+  }
+</script>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
