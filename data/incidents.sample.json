@@ -1,0 +1,787 @@
+{
+  "generatedAt": "2026-08-08T06:44:58.426Z",
+  "note": "Synthetic data for the incident-overlay prototype. Regenerate with `npm run gen:sample`. Road geometry is hand-approximated, not survey-grade.",
+  "incidents": [
+    {
+      "id": "INC-2201",
+      "type": "collision",
+      "severity": "high",
+      "headline": "Two-vehicle collision blocking two right lanes",
+      "description": "Injury collision reported in the eastbound lanes near milepost 6.4. Two of three lanes are blocked; the left lane is getting by. Expect residual delay through the 148th Ave NE interchange.",
+      "road": {
+        "name": "SR 520",
+        "direction": "Eastbound",
+        "mpStart": 6.4,
+        "mpEnd": 7.1
+      },
+      "geometry": [
+        [
+          47.64925219707651,
+          -122.16560285332682
+        ],
+        [
+          47.6512,
+          -122.1618
+        ],
+        [
+          47.6551,
+          -122.1548
+        ],
+        [
+          47.65636585838947,
+          -122.15213143366543
+        ]
+      ],
+      "lanes": {
+        "total": 3,
+        "blocked": 2,
+        "note": "2 of 3 lanes blocked"
+      },
+      "startTime": "2026-08-08T06:03:58.426Z",
+      "estimatedClearTime": "2026-08-08T07:08:58.426Z",
+      "lastUpdated": 1786171138426,
+      "reportedBy": "State Patrol"
+    },
+    {
+      "id": "INC-2202",
+      "type": "roadwork",
+      "severity": "moderate",
+      "headline": "Overnight paving, single-lane closures",
+      "description": "Alternating single-lane closures for paving between Redmond Way and the Sammamish River bridge. Flaggers on site.",
+      "road": {
+        "name": "SR 202",
+        "direction": "Both directions",
+        "mpStart": 1.2,
+        "mpEnd": 2.8
+      },
+      "geometry": [
+        [
+          47.67047662949662,
+          -122.12169425385424
+        ],
+        [
+          47.6664,
+          -122.1182
+        ],
+        [
+          47.6612,
+          -122.1122
+        ],
+        [
+          47.65718179935984,
+          -122.10699122139239
+        ]
+      ],
+      "lanes": {
+        "total": 2,
+        "blocked": 1
+      },
+      "startTime": 1786183018426,
+      "endTime": 1786205698426,
+      "lastUpdated": 1786164298426,
+      "reportedBy": "Regional Maintenance"
+    },
+    {
+      "id": "INC-2203",
+      "type": "closure",
+      "severity": "closure",
+      "headline": "Avondale Rd NE closed for emergency water main repair",
+      "description": "Full closure in both directions between NE 85th St and NE 95th St. Local access only. Signed detour via 172nd Ave NE.",
+      "road": {
+        "name": "Avondale Rd NE",
+        "direction": "Both directions"
+      },
+      "geometry": [
+        [
+          47.6777844447983,
+          -122.11880277771458
+        ],
+        [
+          47.6778,
+          -122.1188
+        ],
+        [
+          47.6842,
+          -122.1176
+        ],
+        [
+          47.68801206715065,
+          -122.1168491382885
+        ]
+      ],
+      "lanes": {
+        "total": 2,
+        "blocked": 2,
+        "note": "Road fully closed"
+      },
+      "startTime": 1786160338426,
+      "estimatedClearTime": 1786189498426,
+      "lastUpdated": 1786169458426,
+      "reportedBy": "City of Redmond"
+    },
+    {
+      "id": "INC-2204",
+      "type": "debris",
+      "severity": 1,
+      "headline": "Debris in the right shoulder",
+      "description": "Ladder reported in the northbound shoulder near NE 60th St.",
+      "road": {
+        "name": "148th Ave NE",
+        "direction": "Northbound",
+        "mpStart": 3.1
+      },
+      "lat": 47.6534,
+      "lng": -122.1458,
+      "lanes": {
+        "blocked": 0,
+        "note": "Shoulder only"
+      },
+      "startTime": 1786170418426,
+      "lastUpdated": 1786170418426,
+      "reportedBy": "Traffic Management Center"
+    },
+    {
+      "id": "INC-2205",
+      "type": "disabled vehicle",
+      "severity": "minor",
+      "status": "cleared",
+      "headline": "Disabled vehicle cleared",
+      "description": "Disabled box truck removed from the right lane.",
+      "road": {
+        "name": "SR 520",
+        "direction": "Westbound",
+        "mpStart": 8.2
+      },
+      "geometry": [
+        [
+          47.66011445640077,
+          -122.14350847518546
+        ],
+        [
+          47.66180299810282,
+          -122.13902328628937
+        ]
+      ],
+      "lanes": {
+        "total": 3,
+        "blocked": 1
+      },
+      "startTime": 1786162138426,
+      "endTime": 1786165738426,
+      "lastUpdated": 1786165738426,
+      "reportedBy": "Incident Response Team"
+    },
+    {
+      "id": "INC-2206",
+      "type": "crash",
+      "severity": "medium",
+      "headline": "Collision blocking the southbound left turn lane",
+      "description": "Non-injury collision at the NE 40th St intersection.",
+      "road": {
+        "name": "W Lake Sammamish Pkwy NE",
+        "direction": "Southbound"
+      },
+      "geometry": [
+        [
+          47.641909215752136,
+          -122.10506049705288
+        ],
+        [
+          47.63807112056021,
+          -122.10407865874797
+        ]
+      ],
+      "lanes": {
+        "total": 2,
+        "blocked": 1
+      },
+      "startTime": 1786168378426,
+      "estimatedClearTime": 1786171978426,
+      "lastUpdated": 1786170838426,
+      "reportedBy": "City of Redmond"
+    },
+    {
+      "id": "INC-2207",
+      "type": "special event",
+      "severity": "low",
+      "headline": "Rolling closures for a charity ride",
+      "description": "Intermittent rolling closures on Willows Rd NE, 8:00–11:00.",
+      "road": {
+        "name": "Willows Rd NE",
+        "direction": "Northbound"
+      },
+      "geometry": [
+        [
+          47.67280068535201,
+          -122.14464666269106
+        ],
+        [
+          47.6796,
+          -122.1432
+        ],
+        [
+          47.6884,
+          -122.1412
+        ],
+        [
+          47.693597452568056,
+          -122.14013385588348
+        ]
+      ],
+      "lanes": {
+        "total": 2,
+        "blocked": 1
+      },
+      "startTime": 1786174798426,
+      "endTime": 1786185538426,
+      "lastUpdated": 1786153498426,
+      "reportedBy": "City of Redmond"
+    }
+  ],
+  "flow": [
+    {
+      "corridorId": "sr520",
+      "index": 0,
+      "path": [
+        [
+          47.6396,
+          -122.198
+        ],
+        [
+          47.6408,
+          -122.1885
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 52
+    },
+    {
+      "corridorId": "sr520",
+      "index": 1,
+      "path": [
+        [
+          47.6408,
+          -122.1885
+        ],
+        [
+          47.6432,
+          -122.179
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 47
+    },
+    {
+      "corridorId": "sr520",
+      "index": 2,
+      "path": [
+        [
+          47.6432,
+          -122.179
+        ],
+        [
+          47.647,
+          -122.17
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 36
+    },
+    {
+      "corridorId": "sr520",
+      "index": 3,
+      "path": [
+        [
+          47.647,
+          -122.17
+        ],
+        [
+          47.6512,
+          -122.1618
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 28
+    },
+    {
+      "corridorId": "sr520",
+      "index": 4,
+      "path": [
+        [
+          47.6512,
+          -122.1618
+        ],
+        [
+          47.6551,
+          -122.1548
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 20
+    },
+    {
+      "corridorId": "sr520",
+      "index": 5,
+      "path": [
+        [
+          47.6551,
+          -122.1548
+        ],
+        [
+          47.6588,
+          -122.147
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 58
+    },
+    {
+      "corridorId": "sr520",
+      "index": 6,
+      "path": [
+        [
+          47.6588,
+          -122.147
+        ],
+        [
+          47.662,
+          -122.1385
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 59
+    },
+    {
+      "corridorId": "sr520",
+      "index": 7,
+      "path": [
+        [
+          47.662,
+          -122.1385
+        ],
+        [
+          47.6645,
+          -122.13
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 56
+    },
+    {
+      "corridorId": "sr520",
+      "index": 8,
+      "path": [
+        [
+          47.6645,
+          -122.13
+        ],
+        [
+          47.6668,
+          -122.1236
+        ]
+      ],
+      "freeFlowMph": 60,
+      "currentMph": 60
+    },
+    {
+      "corridorId": "sr202",
+      "index": 0,
+      "path": [
+        [
+          47.6745,
+          -122.1248
+        ],
+        [
+          47.6706,
+          -122.1218
+        ]
+      ],
+      "freeFlowMph": 45,
+      "currentMph": 44
+    },
+    {
+      "corridorId": "sr202",
+      "index": 1,
+      "path": [
+        [
+          47.6706,
+          -122.1218
+        ],
+        [
+          47.6664,
+          -122.1182
+        ]
+      ],
+      "freeFlowMph": 45,
+      "currentMph": 40
+    },
+    {
+      "corridorId": "sr202",
+      "index": 2,
+      "path": [
+        [
+          47.6664,
+          -122.1182
+        ],
+        [
+          47.6612,
+          -122.1122
+        ]
+      ],
+      "freeFlowMph": 45,
+      "currentMph": 45
+    },
+    {
+      "corridorId": "sr202",
+      "index": 3,
+      "path": [
+        [
+          47.6612,
+          -122.1122
+        ],
+        [
+          47.6558,
+          -122.1052
+        ]
+      ],
+      "freeFlowMph": 45,
+      "currentMph": 44
+    },
+    {
+      "corridorId": "sr202",
+      "index": 4,
+      "path": [
+        [
+          47.6558,
+          -122.1052
+        ],
+        [
+          47.6502,
+          -122.0984
+        ]
+      ],
+      "freeFlowMph": 45,
+      "currentMph": 41
+    },
+    {
+      "corridorId": "redmond-way",
+      "index": 0,
+      "path": [
+        [
+          47.6788,
+          -122.1595
+        ],
+        [
+          47.6783,
+          -122.1492
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 35
+    },
+    {
+      "corridorId": "redmond-way",
+      "index": 1,
+      "path": [
+        [
+          47.6783,
+          -122.1492
+        ],
+        [
+          47.6776,
+          -122.1398
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 32
+    },
+    {
+      "corridorId": "redmond-way",
+      "index": 2,
+      "path": [
+        [
+          47.6776,
+          -122.1398
+        ],
+        [
+          47.6763,
+          -122.132
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 33
+    },
+    {
+      "corridorId": "redmond-way",
+      "index": 3,
+      "path": [
+        [
+          47.6763,
+          -122.132
+        ],
+        [
+          47.6748,
+          -122.1262
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 32
+    },
+    {
+      "corridorId": "avondale",
+      "index": 0,
+      "path": [
+        [
+          47.6722,
+          -122.1198
+        ],
+        [
+          47.6778,
+          -122.1188
+        ]
+      ],
+      "freeFlowMph": 40,
+      "currentMph": 14
+    },
+    {
+      "corridorId": "avondale",
+      "index": 1,
+      "path": [
+        [
+          47.6778,
+          -122.1188
+        ],
+        [
+          47.6842,
+          -122.1176
+        ]
+      ],
+      "freeFlowMph": 40,
+      "currentMph": 5
+    },
+    {
+      "corridorId": "avondale",
+      "index": 2,
+      "path": [
+        [
+          47.6842,
+          -122.1176
+        ],
+        [
+          47.6908,
+          -122.1163
+        ]
+      ],
+      "freeFlowMph": 40,
+      "currentMph": 41
+    },
+    {
+      "corridorId": "148th",
+      "index": 0,
+      "path": [
+        [
+          47.6248,
+          -122.1462
+        ],
+        [
+          47.6392,
+          -122.146
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 32
+    },
+    {
+      "corridorId": "148th",
+      "index": 1,
+      "path": [
+        [
+          47.6392,
+          -122.146
+        ],
+        [
+          47.6534,
+          -122.1458
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 31
+    },
+    {
+      "corridorId": "148th",
+      "index": 2,
+      "path": [
+        [
+          47.6534,
+          -122.1458
+        ],
+        [
+          47.6676,
+          -122.1455
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 32
+    },
+    {
+      "corridorId": "148th",
+      "index": 3,
+      "path": [
+        [
+          47.6676,
+          -122.1455
+        ],
+        [
+          47.6822,
+          -122.1452
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 33
+    },
+    {
+      "corridorId": "156th",
+      "index": 0,
+      "path": [
+        [
+          47.6296,
+          -122.1332
+        ],
+        [
+          47.6438,
+          -122.1328
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 30
+    },
+    {
+      "corridorId": "156th",
+      "index": 1,
+      "path": [
+        [
+          47.6438,
+          -122.1328
+        ],
+        [
+          47.658,
+          -122.1324
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 31
+    },
+    {
+      "corridorId": "156th",
+      "index": 2,
+      "path": [
+        [
+          47.658,
+          -122.1324
+        ],
+        [
+          47.6712,
+          -122.132
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 32
+    },
+    {
+      "corridorId": "willows",
+      "index": 0,
+      "path": [
+        [
+          47.6702,
+          -122.1452
+        ],
+        [
+          47.6796,
+          -122.1432
+        ]
+      ],
+      "freeFlowMph": 40,
+      "currentMph": 40
+    },
+    {
+      "corridorId": "willows",
+      "index": 1,
+      "path": [
+        [
+          47.6796,
+          -122.1432
+        ],
+        [
+          47.6884,
+          -122.1412
+        ]
+      ],
+      "freeFlowMph": 40,
+      "currentMph": 38
+    },
+    {
+      "corridorId": "willows",
+      "index": 2,
+      "path": [
+        [
+          47.6884,
+          -122.1412
+        ],
+        [
+          47.6962,
+          -122.1396
+        ]
+      ],
+      "freeFlowMph": 40,
+      "currentMph": 36
+    },
+    {
+      "corridorId": "wlsp",
+      "index": 0,
+      "path": [
+        [
+          47.6534,
+          -122.1082
+        ],
+        [
+          47.6448,
+          -122.1058
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 24
+    },
+    {
+      "corridorId": "wlsp",
+      "index": 1,
+      "path": [
+        [
+          47.6448,
+          -122.1058
+        ],
+        [
+          47.6362,
+          -122.1036
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 20
+    },
+    {
+      "corridorId": "wlsp",
+      "index": 2,
+      "path": [
+        [
+          47.6362,
+          -122.1036
+        ],
+        [
+          47.6278,
+          -122.1018
+        ]
+      ],
+      "freeFlowMph": 35,
+      "currentMph": 36
+    }
+  ]
+}
