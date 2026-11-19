@@ -1,0 +1,31 @@
+{
+  // Live Server: match the port the README and launch config use.
+  "liveServer.settings.port": 5173,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.CustomBrowser": "chrome",
+
+  // The vendored Leaflet build is minified third-party code — keep it out of
+  // search results, and don't try to lint or format it.
+  "search.exclude": {
+    "**/vendor/**": true,
+    "**/node_modules/**": true,
+    "data/incidents.sample.json": true
+  },
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "javascript.validate.enable": true,
+
+  "editor.rulers": [90],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve on :5173",
+      "detail": "Static file server. Or just use Live Server on index.html.",
+      "type": "shell",
+      "command": "npx --yes serve -l 5173 .",
+      "windows": { "command": "npx --yes serve -l 5173 ." },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Serve on :5173 (Python)",
+      "detail": "Fallback if you'd rather not use Node.",
+      "type": "shell",
+      "command": "python3 -m http.server 5173",
+      "windows": { "command": "python -m http.server 5173" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Test (unit + integration)",
+      "type": "shell",
+      "command": "npm test",
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Smoke (jsdom DOM checks)",
+      "detail": "Needs `npm install` first, for jsdom.",
+      "type": "shell",
+      "command": "npm run smoke",
+      "problemMatcher": []
+    },
+    {
+      "label": "Check (test + smoke)",
+      "type": "shell",
+      "command": "npm run check",
+      "problemMatcher": []
+    },
+    {
+      "label": "Regenerate sample feed",
+      "type": "shell",
+      "command": "npm run gen:sample",
+      "problemMatcher": []
+    }
+  ]
+}

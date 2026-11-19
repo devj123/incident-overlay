@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Open overlay in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Serve on :5173",
+      "sourceMaps": true,
+      "skipFiles": ["${workspaceFolder}/vendor/**"]
+    },
+    {
+      "name": "Open overlay in Edge",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Serve on :5173",
+      "skipFiles": ["${workspaceFolder}/vendor/**"]
+    },
+    {
+      "name": "Debug current test file",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "runtimeArgs": ["--test"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Debug smoke harness",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/smoke.mjs",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
